@@ -3,7 +3,7 @@
 NORDVPN_SERVICE="nordvpn_nordvpn_1"
 SVC_HEALTHY=`docker ps | grep $NORDVPN_SERVICE | grep "(healthy)" | wc -l`
 
-if [[ SVC_HEALTHY -eq 0 ]]
+if [[ $SVC_HEALTHY -eq 0 ]]
 then
     echo "Nordvpn unhealthy, retarting the service and the proxy"
         docker stop nordvpn_nordvpn-privoxy_1
