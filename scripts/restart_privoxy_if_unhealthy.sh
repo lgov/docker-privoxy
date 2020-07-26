@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 NORDVPN_SERVICE="nordvpn_nordvpn_1"
 SVC_HEALTHY=`docker ps | grep NORDVPN_SERVICE | grep "(healthy)" | wc -l`
