@@ -9,5 +9,7 @@ then
     docker stop nordvpn_nordvpn-privoxy_1
     docker restart $NORDVPN_SERVICE
     docker start nordvpn_nordvpn-privoxy_1
+else
+    echo "Nordvpn healthy or starting, no restart needed"
 fi
 
